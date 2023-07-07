@@ -1,23 +1,34 @@
 body{background-color:  #606060;
-margin:0;}
+margin:0;
+font-family: 'Roboto Slab';}
+h3 { margin-left: 100px;}
 
-
+/* header */
 header{background-color: #606060;
 }
 
-.bloque1{
+@media (min-width: 700px)
+{.bloque1 {
         display:grid ;
         grid-template-columns:1fr 1fr 1fr ;
-}
+}}
+@media (max-width:701px){
+.bloque1{
+        display:grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;}}
+
 
 .titulo { display: flex;
         align-self: self-start;
         margin-top: 50px;
-        margin-left: 100px;}
+        margin-left: 100px;
+font-size: 3rem;}
 
 .logo { display: flex;
         align-self: self-start;
-        margin-top: 20px;
+        margin-top: 50px;
         margin-left: 100px;}
 
 .buscador {display: flex;
@@ -38,6 +49,7 @@ header{background-color: #606060;
         padding: 20px;
 }
 
+@Media (min-width: 700px) {
 .prueba { display: grid;
         grid-template-columns:auto 300px ;
 
@@ -45,12 +57,34 @@ grid-template-areas:
 "main aside";}
 
 main {grid-area: main;}
-aside {grid-area: aside;}
+aside {grid-area: aside;}}
 
-h2{ text-align: center;}
-.parrafo {text-align: center;
+
+
+
+
+
+
+
+/*body*/
+.parrafo {display: flex;
+        text-align: center;
 margin-left: 100px;
 margin-right: 100px;}
+
+.titulo-destacados{ text-align: center;}
+
+.contenedor-img {
+        overflow: hidden;
+}
+
+.contenedor-img img {
+        transition: transform 0.3s ease;
+}
+
+.contenedor-img:hover img {
+        transform: scale(1.1);
+}
 
 .imagen-articulo1 {
         position: relative;
@@ -65,8 +99,8 @@ margin-right: 800px;}
 
 .contenedor-img{display: flex;
 justify-content: center;
-align-items: center;}
-
+align-items: center;
+position:relative;}
 .articulo1{text-align: center;
 margin: 10px;}
 
@@ -76,30 +110,21 @@ object-fit: cover;}
 
 .parrafo1{margin-left: 90px;
 margin-right: 90px;}
-
-.contenedor-img {
-        overflow: hidden;
-      }
-      
-      .contenedor-img img {
-        transition: transform 0.3s ease;
-      }
-      
-      .contenedor-img:hover img {
-        transform: scale(1.1);
-      }
-      
-
-
-
-
-
-
-
-h3 { margin-left: 100px;}
-
-
+/* footer */
 .footer{ border-top-style: solid;}
 
 .datos { text-align: center;
 list-style: none;}
+
+/*para pisos*/
+.botones {margin-left: 60px;
+        margin-right: 60px;}
+
+.contenedor{ display: grid;
+        grid-template-columns: 400px auto;
+        margin-top: 100px;
+        margin-bottom: 100px;}     
+
+.titulo-pisos {margin-left: 100px;}
+
+.img-pisos{margin-left: 90px;}  
