@@ -1,18 +1,26 @@
-body{background-color:  #606060;
-margin:0;
-font-family: 'Roboto Slab';}
+body{background-color: #606060;
+        font-family:"roboto slab";}
 h3 { margin-left: 100px;}
 
 /* header */
-header{background-color: #606060;
-}
 
-@media (min-width: 700px)
+
+@media (min-width: 1023px)
 {.bloque1 {
         display:grid ;
-        grid-template-columns:1fr 1fr 1fr ;
-}}
-@media (max-width:701px){
+        grid-template-columns:1fr 1fr 1fr ;}
+.logo { display: flex;
+        justify-content: center;
+        align-items: center;}
+        
+.prueba { display: grid;
+        grid-template-columns:auto 300px ;
+        grid-template-areas: "main aside";}
+        main {grid-area: main;}
+        aside {grid-area: aside;}
+}
+
+@media (max-width:1023px){
 .bloque1{
         display:grid;
         grid-template-columns: 1fr;
@@ -27,9 +35,8 @@ header{background-color: #606060;
 font-size: 3rem;}
 
 .logo { display: flex;
-        align-self: self-start;
-        margin-top: 50px;
-        margin-left: 100px;}
+        justify-content: center;
+        align-items: center;}
 
 .buscador {display: flex;
         align-self: self-start;
@@ -47,20 +54,11 @@ font-size: 3rem;}
         border-bottom-style: solid;
         border-top-style: solid;
         padding: 20px;
+        ;
 }
-
-@Media (min-width: 700px) {
-.prueba { display: grid;
-        grid-template-columns:auto 300px ;
-
-grid-template-areas: 
-"main aside";}
-
-main {grid-area: main;}
-aside {grid-area: aside;}}
-
-
-
+.nav-list a {
+        text-decoration: none; 
+        color:black;}
 
 
 
@@ -70,7 +68,8 @@ aside {grid-area: aside;}}
 .parrafo {display: flex;
         text-align: center;
 margin-left: 100px;
-margin-right: 100px;}
+margin-right: 100px;
+margin-top: auto;}
 
 .titulo-destacados{ text-align: center;}
 
@@ -116,15 +115,47 @@ margin-right: 90px;}
 .datos { text-align: center;
 list-style: none;}
 
+
+@media (max-width: 600px) {
+        .footer li {
+        font-size: 14px;
+        margin: 3px 0;
+        }}
+
+
+
 /*para pisos*/
 .botones {margin-left: 60px;
         margin-right: 60px;}
 
-.contenedor{ display: grid;
+.card-text{ display: grid;
         grid-template-columns: 400px auto;
         margin-top: 100px;
         margin-bottom: 100px;}     
 
 .titulo-pisos {margin-left: 100px;}
 
-.img-pisos{margin-left: 90px;}  
+.img-fluid rounded-start{margin-left: 90px;}  
+
+
+
+.contenedor-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+}
+
+.articulo1 {
+        flex-basis: calc(33.33% - 20px); 
+        margin-bottom: 20px; 
+}
+
+
+
+
+.contenedor-mapa {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        }
+
