@@ -1,0 +1,29 @@
+@import '../base';
+
+
+.botones {margin-left: 60px;
+    margin-right: 60px;}
+
+.contenedor{ display: grid;
+    grid-template-columns: 400px auto;
+    margin-top: 100px;
+    margin-bottom: 100px;}     
+
+.titulo-pisos {margin-left: 100px;}
+
+.img-pisos{margin-left: 90px;}  
+
+
+
+.contenedor-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.articulo1 {
+    flex-basis: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+}
+
+

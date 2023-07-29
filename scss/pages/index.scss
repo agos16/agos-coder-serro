@@ -1,3 +1,7 @@
+
+@import '../base';
+
+
 body{background-color: #606060;
     font-family:"roboto slab";}
 h3 { margin-left: 100px;}
@@ -39,6 +43,8 @@ font-size: 3rem;}
     align-items: center;}
 
 .buscador {display: flex;
+    @include display-flex($justify: left);
+    gap: 5px;
     align-self: self-start;
     margin-top: 60px;
     margin-left: 100px;}
@@ -109,50 +115,47 @@ object-fit: cover;}
 
 .parrafo1{margin-left: 90px;
 margin-right: 90px;}
-/* footer */
-.footer{ border-top-style: solid;}
-
-.datos { text-align: center;
-list-style: none;}
 
 
-@media (max-width: 600px) {
-    .footer li {
-    font-size: 14px;
-    margin: 3px 0;
-    }}
-
-/*para pisos*/
-.botones {margin-left: 60px;
-    margin-right: 60px;}
-
-.contenedor{ display: grid;
-    grid-template-columns: 400px auto;
-    margin-top: 100px;
-    margin-bottom: 100px;}     
-
-.titulo-pisos {margin-left: 100px;}
-
-.img-pisos{margin-left: 90px;}  
-
-
-
-.contenedor-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-}
-
-.articulo1 {
-    flex-basis: calc(33.33% - 20px); 
-    margin-bottom: 20px; 
-}
-
-
+main {
+    @include display-flex($direction: column);
+    align-content: center;}
 
 
 .contenedor-mapa {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.mapa {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+}
+
+.qr {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+
+h3 {
+    margin-bottom: 10px;
+}
+
+
+.contenedor-mapa > div {
+    margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .contenedor-mapa {
+    flex-direction: column;
     }
+}

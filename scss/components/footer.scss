@@ -1,0 +1,11 @@
+.footer{ border-top-style: solid;}
+
+.datos { text-align: center;
+list-style: none;}
+
+
+@media (max-width: 600px) {
+        .footer li {
+        font-size: 14px;
+        margin: 3px 0;
+        }}
