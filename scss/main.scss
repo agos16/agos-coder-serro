@@ -1,4 +1,18 @@
-@media screen and (max-width: 767px) {}
-    .contenedor-mapa {
-      flex-direction: column;
-    }
+
+@import "./base";
+
+
+@import "./components/botones";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/nav";
+@import "./components/carousel";
+
+
+
+
+@import "./pages/index";
+@import "./pages/pisos";
+@import "./pages/paredes";
+@import "./pages/preguntasfrecuentes";
+@import "./pages/contacto";
