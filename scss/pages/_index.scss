@@ -8,7 +8,7 @@ h3 { margin-left: 100px;}
 /* header */
 
 
-@media (min-width: 1023px)
+@media (min-width: 768px)
 {.bloque1 {
     display:grid ;
     grid-template-columns:1fr 1fr 1fr ;}
@@ -78,118 +78,7 @@ margin-top: auto;}
 .titulo-destacados{ text-align: center;}
 
 
-.carousel {
-    overflow: hidden;
-    width: 100%;
-}
-
-.contenedor-img {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.articulo1 {
-    flex: 0 0 300px;
-    margin-right: 20px;
-}
-
-// Añadir estilos a las imágenes dentro del carrusel
-.imagen-articulo1,
-.imagen-articulo2 {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-// Estilos para los títulos y párrafos
-.titulo-imagen-1,
-.parrafo1 {
-    text-align: center;
-}
-
-
-
-
-.contenedor-img {
-    overflow: hidden;
-}
-
-.contenedor-img img {
-    transition: transform 0.3s ease;
-}
-
-.contenedor-img:hover img {
-    transform: scale(1.1);
-}
-
-.imagen-articulo1 {
-    position: relative;
-    width: 300px;
-}
-
-.titulo-imagen-1 {text-decoration:underline;
-margin-left:10px;}
-
-.articulo1 { margin-left: 50px;
-margin-right: 800px;}
-
-.contenedor-img{display: flex;
-justify-content: center;
-align-items: center;
-position:relative;}
-.articulo1{text-align: center;
-margin: 10px;}
-
-.articulo1 img{width: 200px;
-height: 200px;
-object-fit: cover;}
-
-.parrafo1{margin-left: 90px;
-margin-right: 90px;}
-
-
+.card-group{margin-left: 100px;}
 main {
-    align-content: center;}
-
-
-.contenedor-mapa {
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+align-content: center;
 }
-
-
-.mapa {
-    width: 100%;
-    max-width: 300px; 
-    height: auto;
-}
-
-.qr {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-}
-
-
-h3 {
-    margin-bottom: 10px;
-}
-
-
-.contenedor-mapa > div {
-    margin: 10px;
-}
-
-@media screen and (max-width: 767px) {
-    .contenedor-mapa {
-    flex-direction: column;
-    }
-}
-
-
-
-

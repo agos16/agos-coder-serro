@@ -4,12 +4,13 @@ font-size: 20px;
 color: white;
 }
 
-h3
+
 h2 {font-family: 'REM', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-family: 'Ysabeau SC', sans-serif;
-  font-size: 20px;
+  font-size: 40px;
   margin-left: 100px;
+  margin-top: 50px;
 }
 
 
@@ -82,9 +83,11 @@ h2 {font-family: 'REM', sans-serif;
     display: grid;
     grid-template-columns: auto 300px;
     grid-template-areas: "main aside";
+    margin-bottom: 100px;
   }
   main {
     grid-area: main;
+    margin-right: 50px;
   }
   aside {
     grid-area: aside;
@@ -144,6 +147,7 @@ body {
 
 h3 {
   margin-left: 100px;
+  margin-bottom: 10px;
 }
 
 /* header */
@@ -161,6 +165,7 @@ h3 {
     display: grid;
     grid-template-columns: auto 300px;
     grid-template-areas: "main aside";
+    margin-bottom: 100px;
   }
   main {
     grid-area: main;
@@ -249,11 +254,7 @@ main {
   text-align: center;
 }
 
-.mapa {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-}
+
 
 .qr {
   width: 100%;
@@ -261,9 +262,7 @@ main {
   height: auto;
 }
 
-h3 {
-  margin-bottom: 10px;
-}
+
 
 .contenedor-mapa > div {
   margin: 10px;
@@ -279,26 +278,11 @@ body {
   font-family: "roboto slab";
 }
 
-h3 {
-  margin-left: 100px;
-}
+
 
 
 .titulo-pisos {
   margin-left: 100px;
-}
-
-
-
-.contenedor-img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.articulo1 {
-  flex-basis: calc(33.33% - 20px);
-  margin-bottom: 20px;
 }
 
 body {
@@ -306,9 +290,7 @@ body {
   font-family: "roboto slab";
 }
 
-h3 {
-  margin-left: 100px;
-}
+
 
 .carousel-inner {
   border: 1px solid none;
@@ -362,6 +344,8 @@ h3 {
 .carousel-control-next-icon::before {
   font-size: 30px;
 }
+
+.consulta {margin-right: 400px;}
 
 
 

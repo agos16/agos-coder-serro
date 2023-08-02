@@ -1,29 +1,54 @@
+.carousel-inner {
+    border: 1px solid none;
+    border-radius: 5px;
+    overflow: hidden;
+}
 
+.carousel-item img {
+    margin-left: 520px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+    width: auto;
+    height: 600px; 
+    object-fit: cover;
+    display: flex
+    ;
+}
 
-
-.botones {margin-left: 60px;
-    margin-right: 60px;}
-
-.contenedor{ display: grid;
-    grid-template-columns: 400px auto;
-    margin-top: 100px;
-    margin-bottom: 100px;}     
-
-.titulo-pisos {margin-left: 100px;}
-
-.img-pisos{margin-left: 90px;}  
-
-
-
-.contenedor-img {
+.carousel-control-prev,
+.carousel-control-next {
+    font-size: 20px;
+    color: #0f0f0f;
+    background-color: #0c0c0c;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 350px;
+    margin-right: 250px;
+    margin-top: 250px;
 }
 
-.articulo1 {
-    flex-basis: calc(33.33% - 20px); 
-    margin-bottom: 20px; 
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color:none
+    ;
+    margin-bottom: 500px;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+    border: none;;
+}
+
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    font-size: 30px;
+}
+
 
 
