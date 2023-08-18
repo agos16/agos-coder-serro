@@ -1,2 +1,31 @@
-.botones {margin-left: 60px;
-    margin-right: 60px;}
+.botones {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: none;
+    margin-bottom: 500px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    font-size: 30px;
+}
+
+.btn {
+    display: flex;
+    font-size: 16px;
+    border: 0;
+    border-radius: 25px;
+    background-color: white;
+    margin-left: 150px;
+}

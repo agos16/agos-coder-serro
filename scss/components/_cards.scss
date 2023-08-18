@@ -2,4 +2,29 @@
 
 
 
+.col {
     margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.card-title {
+    text-decoration: underline;
+}
+
+.card-text {
+    font-size: 5;
+    font-weight: bolder;
+}
+
+
+.col {
+    .card {
+        &.card-hover {
+            transition: transform 0.3s ease; // Transición suave para el efecto de zoom
+
+            &:hover {
+                transform: scale(1.1); // Escala de 1.1 para el efecto de zoom
+            }
+        }
+    }
+}

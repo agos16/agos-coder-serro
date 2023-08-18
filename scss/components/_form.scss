@@ -1,0 +1,22 @@
+.form-contacto {
+    padding: 50px 55px;
+    box-shadow: blue;
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    margin-left: 550px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+label {
+    display: flex;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 100px;
+}

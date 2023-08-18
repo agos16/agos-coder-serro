@@ -1,3 +1,352 @@
-body{background-color: #606060;
-    font-family:"roboto slab";}
-h3 { margin-left: 100px;}
+body {
+    background-color: #606060;
+    font-family: "roboto slab";
+}
+
+h3 {
+    margin-left: 100px;
+}
+
+/* header */
+@media (min-width: 1023px) {
+    .bloque1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prueba {
+        display: grid;
+        grid-template-columns: auto 300px;
+        grid-template-areas: "main aside";
+        margin-bottom: 100px;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+}
+
+@media (max-width: 1023px) {
+    .bloque1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+}
+
+.titulo {
+    display: flex;
+    align-self: self-start;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 3rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador {
+    display: flex;
+    gap: 5px;
+    align-self: self-start;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.nav-list {
+    display: flex;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-row: 1;
+    gap: 30px;
+    list-style-type: none;
+    margin-top: 70px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    padding: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+}
+
+/*body*/
+.parrafo {
+    display: flex;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: auto;
+}
+
+.titulo-destacados {
+    text-align: center;
+
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-group {
+    margin-left: 100px;
+}
+
+main {
+    align-content: center;
+}
+
+.contenedor-mapa {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+.qr {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 50px;
+}
+
+
+
+.contenedor-mapa>div {
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .contenedor-mapa {
+        flex-direction: column;
+    }
+}
+
+body {
+    background-color: #606060;
+    font-family: "roboto slab";
+}
+
+
+
+
+.titulo-pisos {
+    margin-left: 100px;
+}
+
+
+.col {
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.card-title {
+    text-decoration: underline;
+}
+
+.card-text {
+    font-size: 5;
+    font-weight: bolder;
+}
+
+
+
+body {
+    background-color: #606060;
+    font-family: "roboto slab";
+}
+
+
+
+.carousel-inner {
+    border: 1px solid none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    margin-left: 320px;
+    margin-right: 400px;
+    margin-bottom: 90px;
+    width: auto;
+    height: 600px;
+    object-fit: cover;
+    display: flex;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    font-size: 20px;
+    color: #0f0f0f;
+    background-color: #0c0c0c;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 150px;
+    margin-top: 250px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: none;
+    margin-bottom: 500px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+    border: none;
+    ;
+}
+
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    font-size: 30px;
+}
+
+.consulta {
+    margin-right: 400px;
+}
+
+.form-contacto {
+    padding: 50px 55px;
+    box-shadow: blue;
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    margin-left: 200px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.consulta {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.btn,
+.contacto-textarea {
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid;
+    color: rgb(47, 135, 235);
+    outline: none;
+}
+
+label {
+    display: flex;
+    color: white;
+    font-size: 16px;
+    ;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px
+}
+
+
+
+.btn {
+    display: flex;
+    font-size: 16px;
+    border: 0;
+    border-radius: 25px;
+    background-color: white;
+}
+
+@media screen and (max-width: 1199px) {
+    .qr {
+        max-width: 150px;
+    }
+}
+
+.titulo-pisos,
+.col {
+
+
+    margin-left: 5%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contenedor-mapa {
+        display: flex;
+        ;
+    }
+
+
+    .consulta {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 300px;
+        margin-left: 50px;
+    }
+
+    .carousel-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .titulo-pisos,
+    .col {
+        margin-left: 0;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,57 +1,55 @@
-.carousel-inner {
-    border: 1px solid none;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.carousel-item img {
-    margin-left: 520px;
-    margin-right: 400px;
-    margin-bottom: 100px;
-    width: auto;
-    height: 600px; 
-    object-fit: cover;
-    display: flex
-    ;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
+body {
+    background-color: #606060;
+    font-family: "roboto slab";
     font-size: 20px;
-    color: #0f0f0f;
-    background-color: #0c0c0c;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    color: white;
+}
+
+
+h2 {
+    font-family: 'REM', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.titulo-destacados,
+.titulo-pisos,
+h2,
+.datos,
+h3,
+.card-title {
+    text-shadow: 6px 6px 6px cadetblue
+}
+
+.nav-list {
     display: flex;
-    align-items: center;
+    grid-template-columns: 1fr;
     justify-content: center;
-    margin-left: 350px;
-    margin-right: 250px;
-    margin-top: 250px;
+    grid-row: 1;
+    gap: 30px;
+    list-style-type: none;
+    margin-top: 70px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    padding: 20px;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color:none
-    ;
-    margin-bottom: 500px;
+.nav-list a {
+    text-decoration: none;
+    color: white;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: transparent;
-    border: none;;
+body {
+    background-color: #606060;
+    font-family: "roboto slab";
 }
 
-
-.carousel-control-prev-icon::before,
-.carousel-control-next-icon::before {
-    font-size: 30px;
+h3 {
+    margin-left: 100px;
+    margin-bottom: 10px;
+    margin-right: 100px;
 }
-
-
-
-
-
 
